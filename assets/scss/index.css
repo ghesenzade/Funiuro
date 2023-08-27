@@ -1,0 +1,243 @@
+body {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+body header {
+  width: 100%;
+  background-image: linear-gradient(to right, #f5cb99, #FCF8F3);
+}
+body header .container {
+  padding: 20px 100px;
+  width: 80%;
+}
+body header .container .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body header .container .nav .left {
+  display: flex;
+}
+body header .container .nav .left .nav-bar .nav-left {
+  display: flex;
+  align-items: center;
+}
+body header .container .nav .left .nav-bar .nav-left .nav-list {
+  display: flex;
+  align-items: center;
+}
+body header .container .nav .left .nav-bar .nav-left .nav-list .nav-item {
+  font-size: 16px;
+  padding: 10px 15px;
+  color: #000;
+  list-style: none;
+}
+body header .container .nav .left .nav-bar .nav-left .nav-list .nav-item a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+}
+body header .container .nav .left .nav-bar .nav-left .nav-list .nav-item a:hover {
+  color: #007bff;
+  transition: 0.5s;
+}
+body header .container .nav .left .nav-bar .nav-left .nav-list .nav-item a:hover .drop-menu {
+  display: block;
+}
+body header .container .nav .left .nav-bar .nav-left .nav-list .nav-item .drop-menu {
+  color: #000;
+  background-color: #fff;
+  padding: 20px 0;
+  width: 180px;
+  position: absolute;
+  display: none;
+}
+body header .container .nav .left .nav-bar .nav-left .nav-list .nav-item .drop-menu .drop-item {
+  padding: 5px 20px;
+  position: relative;
+}
+body header .container .nav .right .right-icons {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+}
+body header .container .circles-and-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 85px;
+  margin-bottom: 40px;
+}
+body header .container .circles-and-icons .childs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body header .container .circles-and-icons .childs .parent-circle {
+  position: relative;
+  border: 1px solid none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+body header .container .circles-and-icons .childs .parent-circle:hover {
+  border: 1px solid orange;
+}
+body header .container .circles-and-icons .childs .parent-circle:hover .child-circle {
+  border: 1px solid orange;
+  background-color: orange;
+}
+body header .container .circles-and-icons .childs .parent-circle .child-circle {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 10px;
+  height: 10px;
+  background-color: #D8D8D8;
+  border-radius: 50%;
+}
+body header .container .circles-and-icons .icons {
+  display: flex;
+  gap: 8px;
+}
+body header .container .circles-and-icons .icons .circ-icon {
+  border: 1px solid orange;
+  border-radius: 50%;
+  padding: 10px 15px;
+}
+body header .container .card {
+  width: 16%;
+  height: 50vh;
+  background-color: #fff;
+  position: absolute;
+  z-index: 1;
+  top: 150px;
+  left: 100px;
+  padding: 60px;
+  line-height: 30px;
+}
+body header .container .card p {
+  color: gray;
+}
+body header .container .card .btn {
+  margin-top: 50px;
+  text-align: center;
+}
+body header .container .card .btn a {
+  text-decoration: none;
+  color: #fff;
+  background-color: orange;
+  padding: 12px 52px;
+}
+body header .container .header-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info .container {
+  width: 80%;
+  padding: 20px 100px;
+}
+.info .container .info-content {
+  display: flex;
+  justify-content: space-between;
+}
+.info .container .info-content .info-parts {
+  display: flex;
+  gap: 20px;
+}
+.info .container .info-content .info-parts .info-txt {
+  margin-top: -10px;
+}
+
+.products .container {
+  width: 80%;
+  padding: 20px 100px;
+}
+.products .container .product-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.products .container .product-content .prod-head-txt {
+  margin-bottom: 30px;
+}
+.products .container .product-content .prod-cards .col {
+  display: flex;
+  flex-direction: column;
+}
+.products .container .product-content .prod-cards .col .row {
+  margin-left: 80px;
+  display: flex;
+  gap: 50px;
+}
+.products .container .product-content .prod-cards .col .row .row-card {
+  background-color: #D8D8D8;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  transition: 0.5s ease;
+}
+.products .container .product-content .prod-cards .col .row .row-card .hover {
+  transition: 0.3s ease;
+  visibility: hidden;
+  display: none;
+}
+.products .container .product-content .prod-cards .col .row .row-card .hover a {
+  text-decoration: none;
+  color: orange;
+  border: 1px solid #fff;
+  padding: 10px 30px;
+  background-color: #fff;
+}
+.products .container .product-content .prod-cards .col .row .row-card .hover .social-icon {
+  display: flex;
+  gap: 50px;
+}
+.products .container .product-content .prod-cards .col .row .row-card .hover .social-icon .share {
+  display: flex;
+}
+.products .container .product-content .prod-cards .col .row .row-card .hover .social-icon .like {
+  display: flex;
+}
+.products .container .product-content .prod-cards .col .row .row-card:hover {
+  opacity: 0.4;
+}
+.products .container .product-content .prod-cards .col .row .row-card:hover .hover {
+  position: absolute;
+  display: block;
+  top: 100px;
+  left: 70px;
+  visibility: visible;
+}
+.products .container .product-content .prod-cards .col .row .row-card .card-info {
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+.products .container .product-content .prod-cards .col .row .row-card .card-info h6 {
+  color: gray;
+}
+.products .container .product-content .prod-cards .col .row .row-card .card-info .card-info-rp {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.products .container .product-content .prod-cards .col .row .row-card .card-info .card-info-rp p {
+  color: gray;
+  text-decoration: line-through;
+}
+.products .container .product-content .prod-btn {
+  color: orange;
+  padding: 0 70px;
+  border: 1px solid orange;
+  background-color: #fff;
+}/*# sourceMappingURL=index.css.map */

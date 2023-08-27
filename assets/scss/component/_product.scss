@@ -1,0 +1,91 @@
+.products{
+    .container{
+        width: 80%;
+        padding: 20px 100px;
+        .product-content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .prod-head-txt{
+                margin-bottom: 30px;
+            }
+            .prod-cards{
+                .col{
+                    display: flex;
+                    flex-direction: column;
+                    .row{
+                        margin-left: 80px;
+                        display: flex;
+                        gap: 50px;
+                        .row-card{
+                            background-color: #F4F5F7;
+                            margin-bottom: 30px;
+                            position: relative;
+                            z-index: 1;
+                            top: 0;
+                            left: 0;
+                            transition: 0.5s ease;
+                            .hover{
+                                transition: 0.3s ease;
+                                visibility: hidden;
+                                display:none;
+                                a{
+                                    text-decoration: none;
+                                    color: orange;
+                                    border: 1px solid #fff;
+                                    padding: 10px 30px;
+                                    background-color: #fff;
+                                }
+                                .social-icon{
+                                    display: flex;
+                                    gap: 50px;
+                                    .share{
+                                        display: flex;
+                                    }
+                                    .like{
+                                        display: flex;
+                                    }
+                                }
+                            }
+                            &:hover{
+                                opacity: 0.4;
+                            }
+                            &:hover .hover{
+                                position: absolute;
+                                display: block;
+                                top: 100px;
+                                left: 70px;
+                                visibility: visible;
+                            }
+                            .card-info{
+                                padding: 0 10px;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: baseline;
+                                h6{
+                                    color: gray;
+                                }
+                                .card-info-rp{
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 50px;
+                                    p{
+                                        color: gray;
+                                        text-decoration: line-through;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .prod-btn {
+                color: orange;
+                padding: 0 70px;
+                border: 1px solid orange;
+                background-color: #fff;
+            }
+        }
+    }
+}

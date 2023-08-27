@@ -1,0 +1,17 @@
+.info{
+    .container{
+        width: 80%;
+        padding: 20px 100px;
+        .info-content{
+            display: flex;
+            justify-content: space-between;
+            .info-parts{
+                display: flex;
+                gap: 20px;
+                .info-txt{
+                    margin-top: -10px;
+                }
+            }
+        }
+    }
+}
